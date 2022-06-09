@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    position: relative;
+    height: 84px;
+    border-bottom: 2px solid #c81523;
+}
+
+.logo h2 {
+    text-align: center;
+    height: 84px;
+    line-height: 84px;
+    font-size: 40px;
+}
+
+.logo img {
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 70px;
+    height: 70px;
+}
+
+.navList {
+    width: 100%;
+    background-color: #259b24;
+    margin: 0 auto;
+    height: 42px;
+}
+
+.navList .list {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.navList li {
+    float: left;
+}
+
+.navList li a {
+    height: 42px;
+    line-height: 42px;
+    padding: 0 11px 0 12px;
+}
+
+.bangL {
+    float: left;
+    width: 240px;
+    border: 1px solid #ccc;
+}
+
+.bangL img {
+    width: 100%;
+}
+
+.bangNavLine {
+    width: 170px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+}
+
+.bangNavList {
+    width: 100%;
+    margin: 10px auto;
+}
+
+.bangNavList a {
+    display: inline-block;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    color: black;
+}
+
+.bangNavList .current {
+    background-color: #f34f34;
+}
+
+.bangNavList a:hover {
+    background-color: #ccc;
+}
+
+.bangR {
+    width: 950px;
+    float: right;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+}
+
+.bangR .songList {
+    padding: 2px 10px;
+    height: 380px;
+    margin: 10px;
+}
+
+.bangR li {
+    float: left;
+    width: 400px;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+    margin: 4px 0;
+}
+
+.bangR li span {
+    float: left;
+}
+
+.bangR li:hover {
+    background-color: #ccc;
+}
+
+.d {
+    border: 1px dashed #ccc;
+}

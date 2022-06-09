@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片天地</title>
+    <!-- 页面图标 -->
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        body {
+            perspective: 1000px;
+            background-color: #ccc;
+        }
+        
+        header {
+            position: relative;
+            height: 84px;
+            border-bottom: 2px solid #c81523;
+        }
+        
+        .logo h2 {
+            text-align: center;
+            height: 84px;
+            line-height: 84px;
+            font-size: 40px;
+        }
+        
+        .logo img {
+            position: absolute;
+            top: 8px;
+            left: 4px;
+            width: 70px;
+            height: 70px;
+        }
+        
+        .logo .denglu {
+            position: absolute;
+            right: 15px;
+            top: 56px;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        
+        .box {
+            position: relative;
+            width: 200px;
+            height: 280px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            animation: move 20s linear infinite;
+        }
+        
+        @keyframes move {
+            0% {
+                transform: rotateY(0deg);
+            }
+            100% {
+                transform: rotateY(360deg);
+            }
+        }
+        
+        .box div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .box:hover {
+            animation-play-state: paused;
+        }
+        
+        .box div a {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .box div a:hover {
+            transition: all 0.5s linear;
+            transform: scale(1.1);
+            /* cursor: pointer; */
+        }
+        
+        .box div a img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .b1 {
+            transform: translateZ(300px);
+        }
+        
+        .b2 {
+            transform: rotateY(45deg) translateZ(300px);
+        }
+        
+        .b3 {
+            transform: rotateY(90deg) translateZ(300px);
+        }
+        
+        .b4 {
+            transform: rotateY(135deg) translateZ(300px);
+        }
+        
+        .b5 {
+            transform: rotateY(180deg) translateZ(300px);
+        }
+        
+        .b6 {
+            transform: rotateY(225deg) translateZ(300px);
+        }
+        
+        .b7 {
+            transform: rotateY(270deg) translateZ(300px);
+        }
+        
+        .b8 {
+            transform: rotateY(315deg) translateZ(300px);
+        }
+        
+        .fotter {
+            display: block;
+            margin-top: 140px;
+            text-align: center;
+            font-weight: 800;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="logo">
+            <a href="./图片.html" title="点击可以跳转"><img src="./images/logo.jpg" alt=""></a>
+            <h2>图片天地</h2>
+            <a href="./登陆页面.html" class="denglu">登录账号</a>
+        </div>
+    </header>
+
+    <div class="box">
+        <div class="b1">
+            <a href="./链接/人物.html"><img src="./images/人物.png" alt=""></a>
+        </div>
+        <div class="b2">
+            <a href="./链接/动物.html"><img src="./images/动物.png" alt=""></a>
+        </div>
+        <div class="b3">
+            <a href="./链接/动画.html"><img src="./images/动画.png" alt=""></a>
+        </div>
+        <div class="b4">
+            <a href="./链接/家居.html"><img src="./images/家居.png" alt=""></a>
+        </div>
+        <div class="b5">
+            <a href="./链接/建筑.html"><img src="./images/建筑.png" alt=""></a>
+        </div>
+        <div class="b6">
+            <a href="./链接/植物.html"><img src="./images/植物.png" alt=""></a>
+        </div>
+        <div class="b7">
+            <a href="./链接/风景旅行.html"><img src="./images/风景旅行.png" alt=""></a>
+        </div>
+        <div class="b8">
+            <a href="./链接/餐饮美食.html"><img src="./images/餐饮美食.png" alt=""></a>
+        </div>
+    </div>
+
+    <div class="fotter">
+
+    </div>
+
+    <script>
+        let div = document.querySelector('.fotter')
+        let time = 5;
+
+        function fotter() {
+            if (time == 0) {
+                div.innerHTML = '';
+                clearInterval(timer);
+            } else {
+                div.innerHTML = '点击图片可以跳转(' + time + '秒后消失)'
+                time--;
+            }
+        }
+        fotter();
+        let timer = setInterval(fotter, 1000)
+    </script>
+
+</body>
+
+</html>

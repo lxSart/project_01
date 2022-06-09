@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动物</title>
+    <!-- 页面图标 -->
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="./css/图片.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <header>
+        <div class="logo">
+            <a href="../图片.html" title="点击可以跳转"><img src="../images/logo.jpg" alt=""></a>
+            <h2>图片天地</h2>
+        </div>
+    </header>
+    <div class="title">
+        <a href="./人物.html">人物</a>
+        <a href="./动物.html">动物</a>
+        <a href="./动画.html">动画</a>
+        <a href="./家居.html">家居</a>
+        <a href="./建筑.html">建筑</a>
+        <a href="./植物.html">植物</a>
+        <a href="./风景旅行.html">风景旅行</a>
+        <a href="./餐饮美食.html">餐饮美食</a>
+    </div>
+
+    <div class="img">
+        <ul>
+            <li><img src="./images/动物图片/1.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/2.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/3.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/4.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/9.jpg" alt=""></li>
+            <li><img src="./images/动物图片/5.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/6.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/10.jpg" alt=""></li>
+            <li><img src="./images/动物图片/7.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/8.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/11.jpg" alt=""></li>
+            <li><img src="./images/动物图片/21.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/12.jpg" alt=""></li>
+            <li><img src="./images/动物图片/22.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/13.jpg" alt=""></li>
+            <li><img src="./images/动物图片/14.jpg" alt="" class="other"></li>
+            <li><img src="./images/动物图片/15.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/16.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/17.jpg" alt=""></li>
+            <li><img src="./images/动物图片/18.jpg" alt="" class="big"></li>
+            <li><img src="./images/动物图片/19.jpg" alt="" class="big"></li>
+        </ul>
+    </div>
+    <div class="pic">
+        <img src="" alt="" class="pic_img">
+    </div>
+    <script>
+        let pic = document.querySelector('.pic')
+        let pic_img = document.querySelector('.pic_img')
+        let ul = document.querySelector('ul')
+        let img = document.querySelector('img')
+        ul.addEventListener('click', function(e) {
+            let x = e.target.src;
+            pic_img.src = '' + x + '';
+            pic.style.display = 'block'
+        })
+        pic.addEventListener('click', function() {
+            pic.style.display = 'none'
+        })
+    </script>
+</body>
+
+</html>
